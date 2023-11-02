@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div style="">
-    <CatalogSideBar></CatalogSideBar>
+      <CatalogSideBar></CatalogSideBar>
     <div class="title-1 mt-4">
       历年考研英语
       <a>真题在线</a>

@@ -1,10 +1,10 @@
 <template>
   <div class="catalogSideBar">
     <el-row class="tac">
-      <el-col :span="12">
+      <el-col :span="120">
         <h5 style="">{{ textData.name }}试卷目录</h5>
         <el-menu class="el-menu-vertical-demo" unique-opened=true>
-          <el-submenu v-for="(item, index) in textData.data" :key="index" :index="item.title">
+          <el-submenu  v-for="(item, index) in textData.data" :key="index" :index="item.title">
             <template slot="title">
               <i class="el-icon-location"></i>
               <span>{{ item.title }}</span>
@@ -34,7 +34,7 @@ export default {
   methods: {
     showNewPic (belong, param) {
       console.log(param)
-      emitter.emit('picChange', { belong: belong, newURL: param })
+      emitter.emit('picChange', { belong: belong, name: param })
     }
 
   },
@@ -47,10 +47,11 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 700px;
+  width: 360px;
   height: 100vh;
 
   h5 {
+    width: 360px;
     text-align: center;
     background-color: white;
     margin: 0;

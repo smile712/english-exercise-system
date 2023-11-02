@@ -10,12 +10,12 @@ export default {
         {
           name: '2023年全国硕士研究生入学统一考试英语(一)',
           examData: Y2022One,
-          picName: '2022一'
+          picName: '2023一'
         },
         {
           name: '2023年全国硕士研究生入学统一考试英语(二)',
           examData: Y2022Two,
-          picName: '2022二'
+          picName: '2023二'
         }
       ]
     },
